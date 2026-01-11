@@ -24,7 +24,23 @@ export default function App() {
         </p>
 
         <p className="mt-8 text-sm text-slate-500">
-          Website build in progress.
+          <div className="mt-8 flex flex-wrap gap-3">
+  <a
+    href="https://linkedin.com/in/mikegeorge12"
+    target="_blank"
+    rel="noreferrer"
+    className="inline-flex items-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:opacity-95"
+  >
+    Follow on LinkedIn
+  </a>
+
+  <a
+    href="#contact"
+    className="inline-flex items-center rounded-xl border border-slate-200 px-5 py-3 text-sm font-medium text-slate-800 hover:bg-slate-50"
+  >
+    Work with SLT
+  </a>
+</div>
         </p>
       </main>
     </div>
