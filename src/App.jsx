@@ -73,8 +73,9 @@ export default function App() {
               </div>
 
               <h1 className="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl">
-                Scars. Lessons. Triumphs.
-              </h1>
+  Scars. Lessons. <span className="slt-accent">Triumphs.</span>
+</h1>
+<div className="mt-4 h-1 w-20 rounded-full slt-accent-bg"></div>
 
               <p className="mt-5 text-lg text-slate-600">
                 A brand-led platform sharing leadership lessons, hard-earned experience,
