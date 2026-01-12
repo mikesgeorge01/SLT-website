@@ -117,20 +117,35 @@ export default function App() {
             </div>
 
             {/* Photo */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <img
-                  src="/mike.jpg"
-                  alt="Mike George"
-                  className="h-[300px] w-[240px] rounded-3xl object-cover shadow-lg sm:h-[380px] sm:w-[300px]"
-                />
-                <div className="absolute -bottom-4 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm backdrop-blur">
-                  <div className="text-sm font-semibold">Mike George</div>
-                  <div className="text-xs text-slate-600">Founder • SLT — Scars, Lessons & Triumphs</div>
-                </div>
-              </div>
-            </div>
-          </div>
+<div className="flex justify-center lg:justify-end">
+  <div className="flex flex-col items-center gap-6">
+    <div className="relative">
+      <img
+        src="/mike.jpg"
+        alt="Mike George"
+        className="h-[300px] w-[240px] rounded-3xl object-cover shadow-lg sm:h-[380px] sm:w-[300px]"
+      />
+
+      <div className="absolute -bottom-4 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3">
+        <div className="text-sm font-semibold">Mike George</div>
+        <div className="text-xs text-slate-600 whitespace-nowrap">
+          Founder • SLT – Scars, Lessons & Triumphs
+        </div>
+      </div>
+    </div>
+
+    {/* Bio button */}
+    <button
+      type="button"
+      onClick={() =>
+        document.getElementById("bio")?.scrollIntoView({ behavior: "smooth" })
+      }
+      className="rounded-2xl slt-accent-bg px-8 py-2 text-sm font-semibold text-white shadow hover:opacity-90 transition"
+    >
+      Bio
+    </button>
+  </div>
+</div>
         </div>
       </section>
 
