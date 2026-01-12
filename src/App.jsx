@@ -301,7 +301,13 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="flex justify-center lg:justify-end">
+  <img
+    src="/mike.jpg"
+    alt="Mike George"
+    className="w-72 rounded-3xl object-cover shadow-lg sm:w-80 lg:w-96"
+  />
+</div>
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="text-sm font-semibold">Featured idea</div>
