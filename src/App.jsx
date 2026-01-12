@@ -206,8 +206,8 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Speaking</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            Keynotes, leadership sessions, procurement transformation talks, and team workshops —
-            tailored to the audience and built to drive action.
+            I am available for keynotes, leadership sessions, procurement transformation talks, and team workshops, 
+            all tailored to the audience and built to drive action.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
