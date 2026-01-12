@@ -78,8 +78,8 @@ export default function App() {
 <div className="mt-4 h-1 w-20 rounded-full slt-accent-bg"></div>
 
               <p className="mt-5 text-lg text-slate-600">
-                A brand-led platform sharing leadership lessons, hard-earned experience,
-                and practical thinking, with honesty, intent, and purpose.
+                A leadership focussed platform sharing leadership lessons, hard-earned experience,
+                and practical insight, delivered with honesty, intent, and purpose.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
