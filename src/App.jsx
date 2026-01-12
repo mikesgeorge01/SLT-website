@@ -175,13 +175,13 @@ export default function App() {
     <div className="min-h-screen bg-white text-slate-900">
       {/* Header */}
       <header className="fixed top-0 z-50 w-full border-b border-slate-200/60 bg-white/85 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <button
             onClick={() => scrollTo("home")}
             className="flex items-center gap-3 rounded-2xl px-2 py-1"
             aria-label="Go to home"
           >
-            <img src="/logo.png" alt="SLT logo" className="h-10 w-auto" />
+            <img src="/logo.png" alt="SLT logo" className="h-16 w-auto" />
           </button>
 
           <nav className="hidden md:flex items-center gap-1">
