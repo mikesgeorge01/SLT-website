@@ -8,3 +8,12 @@
 body {
   @apply bg-slate-50 text-slate-900;
 }
+.slt-accent {
+  color: rgb(var(--slt-accent));
+}
+.slt-accent-bg {
+  background-color: rgb(var(--slt-accent));
+}
+.slt-accent-ring {
+  --tw-ring-color: rgb(var(--slt-accent));
+}
