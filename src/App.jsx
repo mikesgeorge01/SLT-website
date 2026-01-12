@@ -122,13 +122,13 @@ export default function App() {
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
                   <div className="text-xs font-semibold text-slate-500">Style</div>
                   <div className="mt-1 text-sm font-semibold">
-                    Supportive • Respectful • Real
+                    Supportive → Respectful → Real
                   </div>
                 </div>
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
                   <div className="text-xs font-semibold text-slate-500">Intent</div>
                   <div className="mt-1 text-sm font-semibold">
-                    Teach • Challenge • Inspire
+                    Teach → Challenge → Inspire
                   </div>
                 </div>
               </div>
@@ -192,7 +192,7 @@ This is my journey.
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">What SLT stands for</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            SLT is about sharing real experiences from the front line, lessons
+            SLT is about sharing real experiences from the trenches, lessons
             learned through pressure, mistakes, resilience, and wins. It’s
             leadership from my lived experience.
           </p>
@@ -201,13 +201,13 @@ This is my journey.
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">Scars</div>
               <p className="mt-2 text-sm text-slate-600">
-                The moments that tested you. The hard calls. The failures you learned from.
+                The moments that tested me. The hard calls. The failures I learned from.
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">Lessons</div>
               <p className="mt-2 text-sm text-slate-600">
-                The insight you earned, decision-making, influence, discipline, consistency.
+                The insight l earned, decision-making, influence, discipline, consistency.
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
@@ -225,7 +225,7 @@ This is my journey.
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Stories & themes</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            Punchy thinking, practical frameworks, and leadership stories, built for people to have maximum impact.
+            What I’ve learned along the way, practical frameworks, honest thinking, and leadership stories to help others create impact.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
