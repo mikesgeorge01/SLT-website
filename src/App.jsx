@@ -178,7 +178,7 @@ export default function App() {
             {[
               { title: "Discipline & Consistency", desc: "Showing up daily. Doing the work when you don’t want to." },
               { title: "Influence without authority", desc: "How to move decisions through trust, clarity, and relationships." },
-              { title: "Procurement as value", desc: "Beyond savings — risk, delivery, outcomes, and stakeholder confidence." },
+              { title: "Procurement as value", desc: "Beyond savings, risk, delivery, outcomes, and stakeholder confidence." },
               { title: "Leadership under pressure", desc: "Calm, accountability, and standards when it gets uncomfortable." },
             ].map((item) => (
               <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6">
@@ -212,9 +212,9 @@ export default function App() {
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {[
-              { title: "Leadership Standards", desc: "Respect, accountability, trust, and discipline — made practical." },
+              { title: "Leadership Standards", desc: "Respect, accountability, trust, and discipline, made practical." },
               { title: "High-performing Teams", desc: "What ‘great’ looks like, and how to build it deliberately." },
-              { title: "Procurement Transformation", desc: "From transaction to strategic value — governance, outcomes, culture." },
+              { title: "Procurement Transformation", desc: "From transaction to strategic value, governance, outcomes, culture." },
             ].map((item) => (
               <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6">
                 <div className="text-sm font-semibold">{item.title}</div>
