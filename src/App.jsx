@@ -56,7 +56,7 @@ export default function App() {
             href={LINKEDIN_URL}
             target="_blank"
             rel="noreferrer"
-            className="rounded-2xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:opacity-95"
+            className="rounded-2xl bg-amber-500 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
           >
             Follow on LinkedIn
           </a>
