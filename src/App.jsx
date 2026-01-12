@@ -236,7 +236,7 @@ This is my journey.
               href={LINKEDIN_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:opacity-95"
+              className="inline-flex items-center rounded-2xl bg-amber-500 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
             >
               Read on LinkedIn
             </a>
