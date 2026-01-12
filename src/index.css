@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --slt-accent: 14 165 233; /* cyan-ish accent */
+  --slt-accent: 245 158 11;       /* Primary gold */
+  --slt-accent-glow: 251 191 36;  /* Soft glow gold */
 }
 
 body {
