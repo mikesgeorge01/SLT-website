@@ -174,11 +174,14 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Bio</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            Scars, Lessons, and Triumphs (SLT) is a series of reflections from the procurement trenches.
-I began my career on 2 September 1987 as an engineering apprentice with Shell. Back then, it was called a “job for life” and for 22 years, it nearly was. Eventually, I chose to step into a new industry and embrace a new challenge.
-Over 38 years, I’ve worked for just four companies, first in engineering, and for the past 25 years in Procurement. Along the way, I’ve had the privilege of working with outstanding leaders, brilliant minds, and others who taught me lessons in their own way. Every experience, every challenge, and every relationship has shaped the person I am today.
-When I reflect on my journey, I often ask myself: What values guided me? What did I learn? What does success really mean? I don’t consider myself a self-proclaimed success, and I carry no ego. What I do have is experience, decades of scars, lessons, and triumphs.
-Now, after nearly four decades, I feel a strong desire to give back: to the industry, to those just starting their careers, and to anyone curious enough to listen. I don’t claim to have all the answers or the “right” approach, but I believe in sharing what I’ve learned, as a way of building legacy and contributing to the growth of colleagues, family, and friends.
+            Scars, Lessons & Triumphs (SLT) is a series of reflections from the procurement trenches.
+
+I began my career in 1987 as an engineering apprentice with Shell. Nearly four decades later, I’ve worked across engineering and procurement, spending 25+ years in senior procurement leadership roles and learning from exceptional people along the way.
+
+I don’t claim perfection or ego—only experience. The scars earned, lessons learned, and triumphs achieved have shaped my values, my leadership, and my perspective on success.
+
+SLT is my way of giving back: sharing real experiences to support, challenge, and inspire those navigating their own careers.
+
 This is my journey.
           </p>
         </div>
