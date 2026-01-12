@@ -122,7 +122,7 @@ export default function App() {
                 <img
                   src="/mike.jpg"
                   alt="Mike George"
-                  className="h-[420px] w-[320px] rounded-3xl object-cover shadow-lg sm:h-[520px] sm:w-[380px]"
+                  className="h-[300px] w-[240px] rounded-3xl object-cover shadow-lg sm:h-[380px] sm:w-[300px]"
                 />
                 <div className="absolute -bottom-4 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm backdrop-blur">
                   <div className="text-sm font-semibold">Mike George</div>
