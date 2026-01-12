@@ -35,7 +35,7 @@ export default function App() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <div className="flex items-center gap-3">
             {/* Bigger logo: change h-14 to h-16 / h-20 if you want */}
-            <img src="/logo.png" alt="SLT logo" className="h-16 w-auto" />
+            <img src="/logo.png" alt="SLT logo" className="h-24 w-auto" />
             <div className="hidden sm:block">
               <div className="text-sm font-semibold leading-tight">SLT</div>
               <div className="text-xs text-slate-500 leading-tight">Scars • Lessons • Triumphs</div>
@@ -79,7 +79,7 @@ export default function App() {
 
               <p className="mt-5 text-lg text-slate-600">
                 A brand-led platform sharing leadership lessons, hard-earned experience,
-                and practical thinking — with honesty, edge, and purpose.
+                and practical thinking, with honesty, intent, and purpose.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -107,7 +107,7 @@ export default function App() {
                 </div>
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
                   <div className="text-xs font-semibold text-slate-500">Style</div>
-                  <div className="mt-1 text-sm font-semibold">Direct • Respectful • Real</div>
+                  <div className="mt-1 text-sm font-semibold">Supportive • Respectful • Real</div>
                 </div>
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
                   <div className="text-xs font-semibold text-slate-500">Intent</div>
@@ -139,8 +139,8 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">What SLT stands for</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            SLT is about sharing truth from the front line — lessons learned through pressure,
-            mistakes, resilience, and wins. It’s leadership through lived experience.
+            SLT is about sharing real experiences from the front line, lessons learned through pressure,
+            mistakes, resilience, and wins. It’s leadership from my lived experience.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -153,13 +153,13 @@ export default function App() {
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">Lessons</div>
               <p className="mt-2 text-sm text-slate-600">
-                The insight you earned — decision-making, influence, discipline, consistency.
+                The insight you earned, decision-making, influence, discipline, consistency.
               </p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">Triumphs</div>
               <p className="mt-2 text-sm text-slate-600">
-                The outcomes — team success, business performance, and personal growth.
+                The outcomes, team success, business performance, and personal growth.
               </p>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Stories & themes</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            Punchy thinking, practical frameworks, and leadership stories — built for real people doing real work.
+            Punchy thinking, practical frameworks, and leadership stories, built for people to have maximum impact.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
@@ -230,8 +230,8 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Contact</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            For speaking, collaboration, or SLT conversations — the quickest route is LinkedIn for now.
-            We’ll add a real email form next.
+            For speaking, collaboration, or SLT conversations, the quickest route is LinkedIn for now.
+            I’ll add a real email form next.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
