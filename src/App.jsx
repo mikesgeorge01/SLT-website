@@ -268,6 +268,36 @@ This is my journey.
         </div>
       </section>
 
+      {/* News */}
+<section id="news" className="border-t border-slate-200 bg-slate-50">
+  <div className="mx-auto max-w-6xl px-4 py-14">
+    <h2 className="text-2xl font-bold tracking-tight">News</h2>
+    <p className="mt-4 max-w-3xl text-slate-600">
+      Updates, reflections, and announcements from SLT — new thinking, recent talks,
+      and moments worth sharing.
+    </p>
+
+    <div className="mt-10 grid gap-4 md:grid-cols-2">
+      <div className="rounded-3xl border border-slate-200 bg-white p-6">
+        <div className="text-sm font-semibold">SLT launch</div>
+        <p className="mt-2 text-sm text-slate-600">
+          Scars, Lessons & Triumphs is now live — a platform for sharing leadership
+          experience from the procurement front line.
+        </p>
+        <div className="mt-3 text-xs text-slate-500">September 2026</div>
+      </div>
+
+      <div className="rounded-3xl border border-slate-200 bg-white p-6">
+        <div className="text-sm font-semibold">Speaking engagements</div>
+        <p className="mt-2 text-sm text-slate-600">
+          Upcoming leadership and procurement sessions currently being planned.
+        </p>
+        <div className="mt-3 text-xs text-slate-500">Coming soon</div>
+      </div>
+    </div>
+  </div>
+</section>
+      
       {/* Contact */}
       <section id="contact" className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-14">
