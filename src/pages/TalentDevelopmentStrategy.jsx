@@ -63,6 +63,10 @@ export default function TalentDevelopmentStrategy() {
           My take on an Industry Leading Talent Development Strategy
         </h1>
 
+<p className="mt-2 text-sm text-slate-500">
+  29 December 2025 • 6 min read
+</p>
+
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
         <p className="mt-6 text-lg text-slate-600">
