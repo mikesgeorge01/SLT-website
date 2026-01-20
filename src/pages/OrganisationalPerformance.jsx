@@ -50,24 +50,42 @@ export default function OrganisationalPerformance() {
           Calm, accountability, and standards when it gets uncomfortable.
         </p>
 
-        <div className="mt-10 grid gap-4 md:grid-cols-2">
-          {[
-            "My take on a Industry Leading Talent Development Strategy",
-            "Work Life Balance: A Leadership Responsibility, Not a Luxury",
-            "What I believe it takes to build a high-performing team",
-            "5S: The Discipline Behind Operational Excellence",
-            "High Performance Isn’t Just About Output, It’s About Honest Conversations",
-            "Change Management",
-          ].map((x) => (
-            <div
-              key={x}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-            >
-              <div className="text-sm font-semibold">{x}</div>
-            </div>
-          ))}
-        </div>
+<div className="mt-10 grid gap-4 md:grid-cols-2">
+  {[
+    "My take on a Industry Leading Talent Development Strategy",
+    "Work Life Balance: A Leadership Responsibility, Not a Luxury",
+    "What I believe it takes to build a high-performing team",
+    "5S: The Discipline Behind Operational Excellence",
+    "High Performance Isn’t Just About Output, It’s About Honest Conversations",
+    "Change Management",
+  ].map((x) => {
+    const isTalentDev =
+      x === "My take on a Industry Leading Talent Development Strategy";
+
+    const cardClasses =
+      "rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition";
+
+    // If it’s the Talent Dev one, make the whole card a Link
+    if (isTalentDev) {
+      return (
+        <Link
+          key={x}
+          to="/stories/talent-development-strategy"
+          className={cardClasses}
+        >
+          <div className="text-sm font-semibold">{x}</div>
+          <div className="mt-2 text-xs text-slate-500">
+            Read the full article →
+          </div>
+        </Link>
+      );
+    }
+
+    // Otherwise keep normal card (not clickable)
+    return (
+      <div key={x} className={cardClasses}>
+        <div className="text-sm font-semibold">{x}</div>
       </div>
-    </div>
-  );
-}
+    );
+  })}
+</div>
