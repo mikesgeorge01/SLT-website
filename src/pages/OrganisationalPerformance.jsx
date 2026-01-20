@@ -52,12 +52,12 @@ export default function OrganisationalPerformance() {
 
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {[
-            "Stay calm when others react",
-            "Hold standards under pressure",
-            "Clarity before speed",
-            "Hard conversations early",
-            "Own mistakes, fix forward",
-            "Protect the team, challenge the work",
+            "My take on a Industry Leading Talent Development Strategy",
+            "Work Life Balance: A Leadership Responsibility, Not a Luxury",
+            "What I believe it takes to build a high-performing team",
+            "5S: The Discipline Behind Operational Excellence",
+            "High Performance Isn’t Just About Output, It’s About Honest Conversations",
+            "Change Management",
           ].map((x) => (
             <div
               key={x}

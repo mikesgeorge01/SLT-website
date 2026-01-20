@@ -52,12 +52,12 @@ export default function ProcurementAsValue() {
 
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {[
-            "Stay calm when others react",
-            "Hold standards under pressure",
-            "Clarity before speed",
-            "Hard conversations early",
-            "Own mistakes, fix forward",
-            "Protect the team, challenge the work",
+            "Procurement is built on trust and trust is built on ethics",
+            "NEC vs FDIC, whats the real difference",
+            "The pitfalls to look out for in strategic sourcing",
+            "Supplier reduction and consolidation",
+            "NEC Contracting, designed for colloboration",
+            "Make vs. Buy, why Procurement sits at the heart of the decision",
           ].map((x) => (
             <div
               key={x}

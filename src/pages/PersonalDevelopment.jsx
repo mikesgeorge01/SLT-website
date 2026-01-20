@@ -52,12 +52,12 @@ export default function PersonalDevelopment() {
 
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {[
-            "Stay calm when others react",
-            "Hold standards under pressure",
+            "How to Lead Without Knowing Everything",
+            "Stop thinking it, Start saying it",
             "Clarity before speed",
-            "Hard conversations early",
-            "Own mistakes, fix forward",
-            "Protect the team, challenge the work",
+            "The art of influencing",
+            "Discipline above everything else",
+            "The art of building relationships",
           ].map((x) => (
             <div
               key={x}

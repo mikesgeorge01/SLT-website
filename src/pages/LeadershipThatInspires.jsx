@@ -56,8 +56,8 @@ export default function LeadershipThatInspires() {
             "Control the Controllables",
             "I don't believe in regrets",
             "Respect, its cost's nothing, but means everything",
-            "Leadership isn't about knowing everything",
             "What I Look for When Interviewing For Talent",
+            "Every succes starts by saying you can't",
           ].map((x) => (
             <div
               key={x}
