@@ -1,3 +1,4 @@
+import TalentDevelopmentStrategy from "./pages/TalentDevelopmentStrategy";
 import React, { useMemo } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -389,6 +390,7 @@ export default function App() {
         path="/stories/leadership-that-inspires"
         element={<LeadershipThatInspires />}
       />
+      <Route path="/news/talent-development-strategy" element={<TalentDevelopmentStrategy />} />
     </Routes>
   );
 }
