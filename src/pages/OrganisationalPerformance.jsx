@@ -42,7 +42,7 @@ export default function OrganisationalPerformance() {
       {/* Page Content */}
       <div className="mx-auto max-w-6xl px-4 py-14">
         <h1 className="text-4xl font-extrabold tracking-tight">
-          Organistional Performance
+          Organisational Performance
         </h1>
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
@@ -50,42 +50,50 @@ export default function OrganisationalPerformance() {
           Calm, accountability, and standards when it gets uncomfortable.
         </p>
 
-<div className="mt-10 grid gap-4 md:grid-cols-2">
-  {[
-    "My take on a Industry Leading Talent Development Strategy",
-    "Work Life Balance: A Leadership Responsibility, Not a Luxury",
-    "What I believe it takes to build a high-performing team",
-    "5S: The Discipline Behind Operational Excellence",
-    "High Performance Isn’t Just About Output, It’s About Honest Conversations",
-    "Change Management",
-  ].map((x) => {
-    const isTalentDev =
-      x === "My take on a Industry Leading Talent Development Strategy";
-
-    const cardClasses =
-      "rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition";
-
-    // If it’s the Talent Dev one, make the whole card a Link
-    if (isTalentDev) {
-      return (
-        <Link
-          key={x}
-          to="/stories/talent-development-strategy"
-          className={cardClasses}
-        >
-          <div className="text-sm font-semibold">{x}</div>
-          <div className="mt-2 text-xs text-slate-500">
-            Read the full article →
-          </div>
-        </Link>
-      );
-    }
-
-    // Otherwise keep normal card (not clickable)
-    return (
-      <div key={x} className={cardClasses}>
-        <div className="text-sm font-semibold">{x}</div>
+        <div className="mt-10 grid gap-4 md:grid-cols-2">
+          {[
+            {
+              title: "My take on a Industry Leading Talent Development Strategy",
+              to: "/stories/talent-development-strategy",
+            },
+            {
+              title: "Work Life Balance: A Leadership Responsibility, Not a Luxury",
+              to: null,
+            },
+            {
+              title: "What I believe it takes to build a high-performing team",
+              to: null,
+            },
+            { title: "5S: The Discipline Behind Operational Excellence", to: null },
+            {
+              title:
+                "High Performance Isn’t Just About Output, It’s About Honest Conversations",
+              to: null,
+            },
+            { title: "Change Management", to: null },
+          ].map((item) =>
+            item.to ? (
+              <Link
+                key={item.title}
+                to={item.to}
+                className="block rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+              >
+                <div className="text-sm font-semibold">{item.title}</div>
+                <div className="mt-2 text-xs font-semibold text-amber-600">
+                  Read more →
+                </div>
+              </Link>
+            ) : (
+              <div
+                key={item.title}
+                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+              >
+                <div className="text-sm font-semibold">{item.title}</div>
+              </div>
+            )
+          )}
+        </div>
       </div>
-    );
-  })}
-</div>
+    </div>
+  );
+}
