@@ -61,14 +61,36 @@ export default function PersonalDevelopment() {
               title: "Stop Thinking It. Start Saying It.",
               to: "/stories/stop-thinking-it-start-saying-it",
             },
+            {
+              title: "The Art of Influencing",
+              to: "/stories/the-art-of-influencing",
+            },
 
             // Previous Personal Development titles (placeholders for now)
-            { title: "Victim vs Victor Mindset", to: null },
-            { title: "Discipline Beats Motivation", to: null },
-            { title: "Consistency Wins", to: null },
-            { title: "Confidence Comes From Preparation", to: null },
-            { title: "Growth Happens Outside Comfort", to: null },
-            { title: "Resilience Under Pressure", to: null },
+            {
+              title: "Victim vs Victor Mindset",
+              to: null,
+            },
+            {
+              title: "Discipline Beats Motivation",
+              to: null,
+            },
+            {
+              title: "Consistency Wins",
+              to: null,
+            },
+            {
+              title: "Confidence Comes From Preparation",
+              to: null,
+            },
+            {
+              title: "Growth Happens Outside Comfort",
+              to: null,
+            },
+            {
+              title: "Resilience Under Pressure",
+              to: null,
+            },
           ].map((item) =>
             item.to ? (
               <Link

@@ -1,3 +1,4 @@
+import TheArtOfInfluencing from "./pages/TheArtOfInfluencing";
 import StopThinkingItStartSayingIt from "./pages/StopThinkingItStartSayingIt";
 import WhatILookForWhenInterviewingForTalent from "./pages/WhatILookForWhenInterviewingForTalent";
 import HowToLeadWithoutKnowingEverything from "./pages/HowToLeadWithoutKnowingEverything";
@@ -461,6 +462,11 @@ export default function App() {
 <Route
   path="/stories/stop-thinking-it-start-saying-it"
   element={<StopThinkingItStartSayingIt />}
+/>
+
+<Route
+  path="/stories/the-art-of-influencing"
+  element={<TheArtOfInfluencing />}
 />
     </Routes>
   );
