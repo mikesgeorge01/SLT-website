@@ -63,30 +63,12 @@ export default function PersonalDevelopment() {
             },
 
             // Previous Personal Development titles (placeholders for now)
-            {
-              title: "Victim vs Victor Mindset",
-              to: null,
-            },
-            {
-              title: "Discipline Beats Motivation",
-              to: null,
-            },
-            {
-              title: "Consistency Wins",
-              to: null,
-            },
-            {
-              title: "Confidence Comes From Preparation",
-              to: null,
-            },
-            {
-              title: "Growth Happens Outside Comfort",
-              to: null,
-            },
-            {
-              title: "Resilience Under Pressure",
-              to: null,
-            },
+            { title: "Victim vs Victor Mindset", to: null },
+            { title: "Discipline Beats Motivation", to: null },
+            { title: "Consistency Wins", to: null },
+            { title: "Confidence Comes From Preparation", to: null },
+            { title: "Growth Happens Outside Comfort", to: null },
+            { title: "Resilience Under Pressure", to: null },
           ].map((item) =>
             item.to ? (
               <Link
@@ -105,3 +87,14 @@ export default function PersonalDevelopment() {
                 className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
               >
                 <div className="text-sm font-semibold">{item.title}</div>
+                <div className="mt-3 text-xs font-semibold text-slate-400">
+                  Coming soon
+                </div>
+              </div>
+            )
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
