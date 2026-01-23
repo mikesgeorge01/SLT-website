@@ -22,7 +22,6 @@ export default function WhatILookForWhenInterviewingForTalent() {
           </Link>
 
           <div className="flex items-center gap-3">
-            {/* Back to Leadership That Inspires */}
             <Link
               to="/stories/leadership-that-inspires"
               className="rounded-2xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
@@ -53,139 +52,208 @@ export default function WhatILookForWhenInterviewingForTalent() {
         <div className="mt-5 text-sm text-slate-500">
           Published:{" "}
           <span className="font-semibold text-slate-700">{published}</span>
-          <span className="mx-2">•</span>5 min read
+          <span className="mx-2">•</span>6 min read
         </div>
 
         <p className="mt-8 text-lg text-slate-700 leading-relaxed">
-          Over the years, I’ve interviewed a lot of people.
+          Over the years, I’ve recruited many people into a wide range of roles.
+          Most have been successes. A few I’ve got wrong. That’s life.
         </p>
 
         <p className="mt-4 text-slate-600 leading-relaxed">
-          Different industries. Different roles. Different stages of their career.
+          It’s true to say the more senior the role the interview has less
+          technical content and focusses more on leadership, values, cultural fit.
         </p>
 
         <p className="mt-4 text-slate-600 leading-relaxed">
-          And while experience matters, I’ve learned something important:
+          Here’s what I’m actually looking for when I sit across the table from a
+          candidate 👇
         </p>
 
-        <p className="mt-4 text-slate-900 font-semibold leading-relaxed">
-          I’m not just hiring a CV. I’m hiring a mindset.
+        {/* 1 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">1️⃣ First impressions matter</h2>
+          <p className="text-slate-600 leading-relaxed">
+            How do they greet you?
+            <br />
+            Eye contact. Confidence (not arrogance). Polite. Respectful. Positive
+            energy.
+            <br />
+            Presence counts.
+          </p>
+        </section>
+
+        {/* 2 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">
+            2️⃣ Real conversation, not rehearsed answers
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Yes preparation is key. But do they listen actively?
+            <br />
+            Do they pause, think, and respond thoughtfully?
+            <br />
+            Great candidates build on the question, not just answer it.
+          </p>
+        </section>
+
+        {/* 3 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">
+            3️⃣ Clear articulation of their journey
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Can they succinctly talk through their career?
+            <br />
+            Key highlights. Real impact. Tangible successes.
+            <br />
+            And can they articulate who they are and what they stand for? What
+            are their values and beliefs?
+          </p>
+        </section>
+
+        {/* 4 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">4️⃣ Strategy and delivery</h2>
+          <p className="text-slate-600 leading-relaxed">
+            It’s easy to talk strategy.
+            <br />
+            It’s harder to roll up your sleeves and deliver.
+            <br />
+            I look for people who can do both and know when each is needed.
+          </p>
+        </section>
+
+        {/* 5 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">
+            5️⃣ Relationships and influence
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            How do they build trust?
+            <br />
+            How do they influence outcomes?
+            <br />
+            Fitting into a team matters but so does changing outcomes.
+          </p>
+        </section>
+
+        {/* 6 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">
+            6️⃣ Energy, ambition, and self-awareness
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Do they have drive?
+            <br />
+            Where do they want to grow?
+            <br />
+            Are they comfortable being uncomfortable?
+            <br />
+            Mindset and emotional intelligence matter more than titles.
+          </p>
+        </section>
+
+        {/* 7 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">
+            7️⃣ Preparation and understanding
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Have they researched the company?
+            <br />
+            Do they understand the role?
+            <br />
+            Can they clearly articulate the value they bring and bring it to life
+            with examples?
+          </p>
+        </section>
+
+        {/* 8 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">
+            8️⃣ Presence throughout the conversation
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Relaxed. Engaged. Confident.
+            <br />
+            Do they feel like the right fit in the room?
+          </p>
+        </section>
+
+        {/* 9 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">9️⃣ Genuine excitement</h2>
+          <p className="text-slate-600 leading-relaxed">
+            Does the role excite them?
+            <br />
+            Does the challenge energise them?
+            <br />
+            You can’t fake real motivation.
+          </p>
+        </section>
+
+        {/* 10 */}
+        <section className="mt-10 space-y-4">
+          <h2 className="text-xl font-bold text-slate-900">🔟 Quality of questions</h2>
+          <p className="text-slate-600 leading-relaxed">
+            Not generic.
+            <br />
+            Targeted. Thoughtful. Specific to the role, the company, and the
+            interviewers.
+            <br />
+            Great questions reveal great thinking.
+          </p>
+        </section>
+
+        <p className="mt-10 text-slate-600 leading-relaxed">
+          For me, an interview isn’t about ticking boxes. It’s about spotting
+          potential, mindset, and fit and imagining how this person shows up on
+          day one and every day, not just interview day.
         </p>
 
-        {/* Section */}
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-bold text-slate-900">
-            1) Curiosity (Do they want to learn?)
-          </h2>
+        <p className="mt-6 text-slate-900 font-semibold leading-relaxed">
+          What do you look for when hiring?
+        </p>
 
-          <p className="text-slate-600 leading-relaxed">
-            The best people don’t pretend they know everything.
+        {/* SLT footer */}
+        <section className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-6">
+          <p className="text-slate-900 font-semibold">
+            Scars, Lessons and Triumphs (SLT) ⭐️
+          </p>
+          <p className="mt-2 text-slate-600">
+            A series of reflections from the procurement trenches.
           </p>
 
-          <p className="text-slate-600 leading-relaxed">
-            They ask questions. They listen. They want to understand how things work.
+          <p className="mt-4 text-slate-600">
+            👉🏽Follow me for insights drawn from 25 years in procurement and over 38
+            years across global industry
           </p>
 
-          <p className="text-slate-600 leading-relaxed">
-            Curiosity is the difference between someone who repeats tasks… and someone who
-            grows into leadership.
+          <p className="mt-4 text-slate-900 font-semibold">
+            Let’s continue the conversation.
           </p>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            {[
+              "Procurement",
+              "SupplyChain",
+              "StrategicSourcing",
+              "ValueCreation",
+              "BusinessPartnering",
+              "Sustainability",
+              "Innovation",
+              "Leadership",
+            ].map((tag) => (
+              <span
+                key={tag}
+                className="inline-flex items-center rounded-full border border-amber-200 bg-white px-3 py-1 text-xs font-semibold text-amber-700"
+              >
+                #{tag}
+              </span>
+            ))}
+          </div>
         </section>
-
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-bold text-slate-900">
-            2) Ownership (Do they take responsibility?)
-          </h2>
-
-          <p className="text-slate-600 leading-relaxed">
-            I look for people who don’t blame, deflect, or hide.
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            They own outcomes. They take accountability. They follow through.
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            It’s not about being perfect. It’s about being dependable.
-          </p>
-        </section>
-
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-bold text-slate-900">
-            3) Humility (Are they confident enough to be coached?)
-          </h2>
-
-          <p className="text-slate-600 leading-relaxed">
-            Confidence is good.
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            But ego kills teams.
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            The best hires are the ones who are strong, capable, and still open to learning.
-          </p>
-        </section>
-
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-bold text-slate-900">
-            4) Communication (Can they make things clear?)
-          </h2>
-
-          <p className="text-slate-600 leading-relaxed">
-            Great people don’t just do the work…
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            They can explain it.
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            They can simplify complexity and bring stakeholders with them.
-          </p>
-        </section>
-
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-bold text-slate-900">
-            5) Values (Will I trust them in the tough moments?)
-          </h2>
-
-          <p className="text-slate-600 leading-relaxed">
-            Skills can be taught.
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            Values are harder to change.
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            I look for people who treat others with respect, act with integrity, and show
-            professionalism when it gets uncomfortable.
-          </p>
-        </section>
-
-        <section className="mt-10 space-y-6">
-          <h2 className="text-2xl font-bold text-slate-900">
-            My final thought
-          </h2>
-
-          <p className="text-slate-600 leading-relaxed">
-            Interviews aren’t just about proving competence.
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            They’re about showing character.
-          </p>
-
-          <p className="text-slate-600 leading-relaxed">
-            I want people who will raise standards, strengthen culture, and make the team better.
-          </p>
-        </section>
-
-        <div className="mt-10 text-sm text-slate-500">
-          Scars, Lessons and Triumphs (SLT) ⭐️ — reflections from the procurement trenches.
-        </div>
       </main>
     </div>
   );
