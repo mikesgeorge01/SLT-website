@@ -22,7 +22,7 @@ export default function FallInLoveWithYourLife2026() {
           </Link>
 
           <div className="flex items-center gap-3">
-            {/* ✅ Back button now goes to HOME */}
+            {/* Back to HOME */}
             <Link
               to="/"
               className="rounded-2xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
@@ -123,4 +123,7 @@ export default function FallInLoveWithYourLife2026() {
             ))}
           </div>
         </section>
-      </mai
+      </main>
+    </div>
+  );
+}
