@@ -50,6 +50,12 @@ export default function StrategicVsOperationalProcurement() {
 
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
+<img
+  src="/strategic-vs-operational.jpg"
+  alt="Strategic vs Operational Procurement"
+  className="mt-8 mx-auto w-full max-w-xl rounded-3xl border border-slate-200 shadow-sm"
+/>
+
         <div className="mt-5 text-sm text-slate-500">
           Published:{" "}
           <span className="font-semibold text-slate-700">{published}</span>
