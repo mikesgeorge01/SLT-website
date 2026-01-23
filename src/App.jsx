@@ -1,3 +1,4 @@
+import ProcurementBuiltOnTrust from "./pages/stories/procurement-as-value/ProcurementBuiltOnTrust";
 import FallInLoveWithYourLife2026 from "./pages/FallInLoveWithYourLife2026";
 import DisciplineAboveEverythingElse from "./pages/DisciplineAboveEverythingElse";
 import TheArtOfInfluencing from "./pages/TheArtOfInfluencing";
@@ -487,6 +488,11 @@ export default function App() {
         path="/stories/fall-in-love-with-your-life-2026"
         element={<FallInLoveWithYourLife2026 />}
       />
+
+      <Route
+  path="/stories/procurement-as-value/procurement-built-on-trust"
+  element={<ProcurementBuiltOnTrust />}
+/>
     </Routes>
   );
 }
