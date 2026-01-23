@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LINKEDIN_URL = "https://linkedin.com/in/mikegeorge12";
 
 export default function ProcurementBuiltOnTrust() {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-white text-slate-900">
       {/* Header */}
@@ -20,12 +22,14 @@ export default function ProcurementBuiltOnTrust() {
           </Link>
 
           <div className="flex items-center gap-3">
-            <Link
-              to="/procurement-as-value"
+            {/* Back to previous screen (Procurement As Value listing) */}
+            <button
+              type="button"
+              onClick={() => navigate(-1)}
               className="rounded-2xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
             >
               ← Back
-            </Link>
+            </button>
 
             <a
               href={LINKEDIN_URL}
@@ -53,7 +57,9 @@ export default function ProcurementBuiltOnTrust() {
 
         <div className="space-y-6 text-lg leading-relaxed text-slate-800">
           <p>
-            <strong>Procurement is built on trust, and trust is built on ethics.</strong>
+            <strong>
+              Procurement is built on trust, and trust is built on ethics.
+            </strong>
           </p>
 
           <p>
@@ -106,7 +112,10 @@ export default function ProcurementBuiltOnTrust() {
             right thing
           </p>
 
-          <p>To anyone starting out in procurement or supply chain, remember this:</p>
+          <p>
+            To anyone starting out in procurement or supply chain, remember
+            this:
+          </p>
 
           <ul className="list-disc pl-6 space-y-2">
             <li>✔️ Stay true to your values and integrity</li>
@@ -125,8 +134,8 @@ export default function ProcurementBuiltOnTrust() {
           <p>A series of reflections from the procurement trenches.</p>
 
           <p className="font-semibold">
-            👉🏽 Follow me for insights drawn from 25 years in procurement and over
-            38 years across global industry
+            👉🏽 Follow me for insights drawn from 25 years in procurement and
+            over 38 years across global industry
           </p>
 
           <p className="font-semibold">Let’s continue the conversation.</p>
