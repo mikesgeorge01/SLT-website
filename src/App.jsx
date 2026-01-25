@@ -241,26 +241,31 @@ function Home() {
             learned through pressure, mistakes, resilience, and wins.
           </p>
 
+          {/* UPDATED TILES (NOW AMBER LIKE THE HERO PILLS) */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold">Scars</div>
-              <p className="mt-2 text-sm text-slate-600">
-                The moments that tested me. The hard calls. The failures I learned
-                from.
+            <div className="rounded-3xl border border-amber-200 bg-amber-50 p-6">
+              <div className="text-sm font-semibold text-amber-900">Scars</div>
+              <p className="mt-2 text-sm text-amber-900/80">
+                The moments that tested me. The hard calls. The failures I
+                learned from.
               </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold">Lessons</div>
-              <p className="mt-2 text-sm text-slate-600">
+            <div className="rounded-3xl border border-amber-200 bg-amber-50 p-6">
+              <div className="text-sm font-semibold text-amber-900">
+                Lessons
+              </div>
+              <p className="mt-2 text-sm text-amber-900/80">
                 The insight I earned: decision-making, influence, discipline,
                 consistency.
               </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold">Triumphs</div>
-              <p className="mt-2 text-sm text-slate-600">
+            <div className="rounded-3xl border border-amber-200 bg-amber-50 p-6">
+              <div className="text-sm font-semibold text-amber-900">
+                Triumphs
+              </div>
+              <p className="mt-2 text-sm text-amber-900/80">
                 The outcomes: team success, business performance, and personal
                 growth.
               </p>
