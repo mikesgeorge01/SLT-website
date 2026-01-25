@@ -50,25 +50,26 @@ function NavLink({ to, children }) {
 function Home() {
   const year = useMemo(() => new Date().getFullYear(), []);
 
+  // UPDATED TILE TEXT (ARTICLES SECTION)
   const storyCards = [
     {
       title: "Organisational Performance",
-      desc: "Turning intent into delivery across people, process, and partners.",
+      desc: "How to maximise performance through people, process and governance.",
       slug: "organisational-performance",
     },
     {
       title: "Personal Development",
-      desc: "Learning to think clearly, build confidence, and show up better.",
+      desc: "How to build your confidence, resilience, and stronger decision making under pressure.",
       slug: "personal-development",
     },
     {
       title: "Procurement as value",
-      desc: "Beyond savings: risk, delivery, outcomes, and stakeholder confidence.",
+      desc: "How to shift procurement from savings to value, and how to build stakeholder confidence",
       slug: "procurement-as-value",
     },
     {
       title: "Leadership that inspires",
-      desc: "Calm, accountability, and standards when it gets uncomfortable.",
+      desc: "How to elevate your leadership and remain humble.",
       slug: "leadership-that-inspires",
     },
   ];
@@ -91,13 +92,12 @@ function Home() {
           <nav className="hidden md:flex items-center gap-1">
             <NavLink to="home">Home</NavLink>
             <NavLink to="about">About</NavLink>
-<NavLink to="stories">Articles</NavLink>
+            <NavLink to="stories">Articles</NavLink>
             <NavLink to="speaking">Speaking</NavLink>
             <NavLink to="news">News</NavLink>
             <NavLink to="contact">Contact</NavLink>
           </nav>
 
-          {/* UPDATED TOP BUTTON TEXT */}
           <a
             href={LINKEDIN_URL}
             target="_blank"
@@ -242,7 +242,6 @@ function Home() {
             learned through pressure, mistakes, resilience, and wins.
           </p>
 
-          {/* ORIGINAL WHITE TILES */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">Scars</div>
@@ -271,18 +270,16 @@ function Home() {
         </div>
       </section>
 
-      {/* Stories (GREY) */}
+      {/* Articles (GREY) */}
       <section id="stories" className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-14">
-          {/* UPDATED HEADING */}
           <h2 className="text-2xl font-bold tracking-tight">Insights & Articles</h2>
+
           <p className="mt-4 max-w-3xl text-slate-600">
-All articles are structured across four core pillars. 
-Select a pillar to explore insights, lessons, and practical 
-thinking to support your development and impact.
+            My articles are organised into four pillars. Select a pillar to explore
+            interesting articles that will provide you with insight.
           </p>
 
-          {/* ORIGINAL WHITE STORY CARDS */}
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {storyCards.map((item) => (
               <Link
@@ -463,10 +460,7 @@ export default function App() {
         path="/stories/idiots-guide-procurement"
         element={<IdiotsGuideProcurement />}
       />
-      <Route
-        path="/stories/hierarchy-of-success"
-        element={<HierarchyOfSuccess />}
-      />
+      <Route path="/stories/hierarchy-of-success" element={<HierarchyOfSuccess />} />
       <Route
         path="/stories/control-the-controllables"
         element={<ControlTheControllables />}
@@ -499,10 +493,7 @@ export default function App() {
         path="/stories/stop-thinking-it-start-saying-it"
         element={<StopThinkingItStartSayingIt />}
       />
-      <Route
-        path="/stories/the-art-of-influencing"
-        element={<TheArtOfInfluencing />}
-      />
+      <Route path="/stories/the-art-of-influencing" element={<TheArtOfInfluencing />} />
       <Route
         path="/stories/discipline-above-everything-else"
         element={<DisciplineAboveEverythingElse />}
