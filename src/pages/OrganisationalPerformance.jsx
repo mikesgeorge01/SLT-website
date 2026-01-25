@@ -64,10 +64,10 @@ export default function OrganisationalPerformance() {
               title: "Work Life Balance: A Leadership Responsibility, Not a Luxury",
               to: "/stories/organisational-performance/work-life-balance-leadership",
             },
-            {
-              title: "What I believe it takes to build a high-performing team",
-              to: null,
-            },
+{
+  title: "What I believe it takes to build a high-performing team",
+  to: "/stories/organisational-performance/high-performing-team",
+},
             { title: "5S: The Discipline Behind Operational Excellence", to: null },
             {
               title:

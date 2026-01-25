@@ -1,3 +1,4 @@
+import HighPerformingTeam from "./pages/HighPerformingTeam";
 import WorkLifeBalanceLeadership from "./pages/WorkLifeBalanceLeadership";
 import StrategicSourcingPitfalls from "./pages/StrategicSourcingPitfalls";
 import NecVsFidic from "./pages/NecVsFidic";
@@ -510,6 +511,11 @@ export default function App() {
 <Route
   path="/stories/organisational-performance/work-life-balance-leadership"
   element={<WorkLifeBalanceLeadership />}
+/>
+
+<Route
+  path="/stories/organisational-performance/high-performing-team"
+  element={<HighPerformingTeam />}
 />
     </Routes>
   );
