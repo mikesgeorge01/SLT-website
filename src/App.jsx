@@ -47,10 +47,67 @@ function NavLink({ to, children }) {
   );
 }
 
+/** Fade-in on scroll (no libs) */
+function useInView(options = { threshold: 0.15 }) {
+  const [ref, setRef] = React.useState(null);
+  const [inView, setInView] = React.useState(false);
+
+  React.useEffect(() => {
+    if (!ref) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setInView(true);
+        observer.disconnect(); // trigger once
+      }
+    }, options);
+
+    observer.observe(ref);
+    return () => observer.disconnect();
+  }, [ref, options]);
+
+  return [setRef, inView];
+}
+
+function FadeIn({ children, delayMs = 0 }) {
+  const [setRef, inView] = useInView({ threshold: 0.15 });
+
+  return (
+    <div
+      ref={setRef}
+      style={{ transitionDelay: `${delayMs}ms` }}
+      className={[
+        "transition-all duration-700 ease-out will-change-transform",
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
+      ].join(" ")}
+    >
+      {children}
+    </div>
+  );
+}
+
+function SLTTile({ title, children }) {
+  return (
+    <div className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+      {/* animated accent line */}
+      <div className="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-amber-500 transition-transform duration-300 group-hover:scale-x-100" />
+
+      <div className="relative">
+        <div className="text-sm font-semibold text-slate-900 transition-colors duration-300 group-hover:text-slate-950">
+          {title}
+        </div>
+
+        <p className="mt-2 text-sm text-slate-600 transition-colors duration-300 group-hover:text-slate-700">
+          {children}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function Home() {
   const year = useMemo(() => new Date().getFullYear(), []);
 
-  // UPDATED TILE TEXT (ARTICLES SECTION)
   const storyCards = [
     {
       title: "Organisational Performance",
@@ -59,17 +116,17 @@ function Home() {
     },
     {
       title: "Personal Development",
-      desc: "How to build your confidence and resilience, and execute stronger decision making under pressure.",
+      desc: "How to build your confidence, resilience, and stronger decision making under pressure.",
       slug: "personal-development",
     },
     {
       title: "Procurement as value",
-      desc: "How to shift procurement from savings to value, and build stakeholder confidence.",
+      desc: "How to shift procurement from savings to value, and how to build stakeholder confidence",
       slug: "procurement-as-value",
     },
     {
       title: "Leadership that inspires",
-      desc: "How to elevate your leadership that inspires others.",
+      desc: "How to elevate your leadership and remain humble.",
       slug: "leadership-that-inspires",
     },
   ];
@@ -242,30 +299,28 @@ function Home() {
             learned through pressure, mistakes, resilience, and wins.
           </p>
 
+          {/* Animated tiles (fade-in on scroll + subtle hover) */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold">Scars</div>
-              <p className="mt-2 text-sm text-slate-600">
+            <FadeIn delayMs={0}>
+              <SLTTile title="Scars">
                 The moments that tested me. The hard calls. The failures I learned
                 from.
-              </p>
-            </div>
+              </SLTTile>
+            </FadeIn>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold">Lessons</div>
-              <p className="mt-2 text-sm text-slate-600">
+            <FadeIn delayMs={120}>
+              <SLTTile title="Lessons">
                 The insight I earned: decision-making, influence, discipline,
                 consistency.
-              </p>
-            </div>
+              </SLTTile>
+            </FadeIn>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold">Triumphs</div>
-              <p className="mt-2 text-sm text-slate-600">
+            <FadeIn delayMs={240}>
+              <SLTTile title="Triumphs">
                 The outcomes: team success, business performance, and personal
                 growth.
-              </p>
-            </div>
+              </SLTTile>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -276,7 +331,8 @@ function Home() {
           <h2 className="text-2xl font-bold tracking-tight">Insights & Articles</h2>
 
           <p className="mt-4 max-w-3xl text-slate-600">
-            My articles are organised into four pillars. Select a pillar and explore articles that can help transform your leadership.
+            My articles are organised into four pillars. Select a pillar and
+            explore articles that will transform your leadership.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
@@ -459,7 +515,10 @@ export default function App() {
         path="/stories/idiots-guide-procurement"
         element={<IdiotsGuideProcurement />}
       />
-      <Route path="/stories/hierarchy-of-success" element={<HierarchyOfSuccess />} />
+      <Route
+        path="/stories/hierarchy-of-success"
+        element={<HierarchyOfSuccess />}
+      />
       <Route
         path="/stories/control-the-controllables"
         element={<ControlTheControllables />}
@@ -492,7 +551,10 @@ export default function App() {
         path="/stories/stop-thinking-it-start-saying-it"
         element={<StopThinkingItStartSayingIt />}
       />
-      <Route path="/stories/the-art-of-influencing" element={<TheArtOfInfluencing />} />
+      <Route
+        path="/stories/the-art-of-influencing"
+        element={<TheArtOfInfluencing />}
+      />
       <Route
         path="/stories/discipline-above-everything-else"
         element={<DisciplineAboveEverythingElse />}
