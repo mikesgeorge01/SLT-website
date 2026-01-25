@@ -64,8 +64,7 @@ export default function NecDesignedForCollaboration() {
           </p>
 
           <p className="text-xl font-semibold">
-            👉 The contract doesn’t deliver the project. <br />
-            People, behaviours, and governance do.
+            👉 The contract doesn’t deliver the project. People, behaviours, and governance do.
           </p>
 
           <p>
