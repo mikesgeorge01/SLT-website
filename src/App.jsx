@@ -59,17 +59,17 @@ function Home() {
     },
     {
       title: "Personal Development",
-      desc: "How to build your confidence, resilience, and stronger decision making under pressure.",
+      desc: "How to build your confidence, resilience, and execute stronger decision making under pressure.",
       slug: "personal-development",
     },
     {
       title: "Procurement as value",
-      desc: "How to shift procurement from savings to value, and how to build stakeholder confidence",
+      desc: "How to shift procurement from savings to value, and how to build stakeholder confidence.",
       slug: "procurement-as-value",
     },
     {
       title: "Leadership that inspires",
-      desc: "How to elevate your leadership and remain humble.",
+      desc: "How to elevate your leadership that inspires others.",
       slug: "leadership-that-inspires",
     },
   ];
