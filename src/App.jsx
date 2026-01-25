@@ -191,7 +191,7 @@ function Home() {
                 </p>
 
                 <p>
-                  SLT is my way of doing that — sharing real experiences to
+                  SLT is my way of doing that, sharing real experiences to
                   support, challenge, and inspire others navigating their own
                   careers.
                   <span className="font-semibold text-slate-800">
