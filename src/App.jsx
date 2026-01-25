@@ -132,9 +132,7 @@ function Home() {
               <div className="mt-4 h-1 w-20 rounded-full slt-accent-bg"></div>
 
               <p className="mt-5 text-lg text-slate-600">
-                A leadership focussed platform sharing leadership lessons from the
-                procurement trenches, hard-earned experience, and practical
-                insight, delivered with honesty, intent, and purpose.
+                Real leadership lessons from the front line of procurement and performance.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
