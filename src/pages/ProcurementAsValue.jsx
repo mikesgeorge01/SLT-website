@@ -105,8 +105,19 @@ export default function ProcurementAsValue() {
   </div>
 </Link>
 
+<Link
+  to="/stories/procurement-as-value/strategic-sourcing-pitfalls"
+  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+>
+  <div className="text-sm font-semibold">
+    The Pitfalls to Look Out For in Strategic Sourcing
+  </div>
+  <div className="mt-2 text-xs font-semibold text-amber-600">
+    Read more →
+  </div>
+</Link>
+
           {[
-            "The pitfalls to look out for in strategic sourcing",
             "Supplier reduction and consolidation",
             "NEC Contracting, designed for colloboration",
             "Make vs. Buy, why Procurement sits at the heart of the decision",

@@ -1,3 +1,4 @@
+import StrategicSourcingPitfalls from "./pages/StrategicSourcingPitfalls";
 import NecVsFidic from "./pages/NecVsFidic";
 import ProcurementBuiltOnTrust from "./pages/ProcurementBuiltOnTrust";
 import FallInLoveWithYourLife2026 from "./pages/FallInLoveWithYourLife2026";
@@ -498,6 +499,11 @@ export default function App() {
 <Route
   path="/stories/procurement-as-value/nec-vs-fidic"
   element={<NecVsFidic />}
+/>
+
+<Route
+  path="/stories/procurement-as-value/strategic-sourcing-pitfalls"
+  element={<StrategicSourcingPitfalls />}
 />
     </Routes>
   );
