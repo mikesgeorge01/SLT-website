@@ -156,6 +156,8 @@ function Home() {
                 </div>
               </div>
 
+<div className="my-8 h-px w-full bg-slate-200/70"></div>
+
 {/* About SLT */}
 <div className="mt-8">
   <h2 className="text-lg font-bold tracking-tight">
