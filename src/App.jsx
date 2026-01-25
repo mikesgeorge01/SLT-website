@@ -1,3 +1,4 @@
+import NecDesignedForCollaboration from "./pages/NecDesignedForCollaboration";
 import SupplierReductionConsolidation from "./pages/SupplierReductionConsolidation";
 import HighPerformingTeam from "./pages/HighPerformingTeam";
 import WorkLifeBalanceLeadership from "./pages/WorkLifeBalanceLeadership";
@@ -522,6 +523,11 @@ export default function App() {
 <Route
   path="/stories/procurement-as-value/supplier-reduction-consolidation"
   element={<SupplierReductionConsolidation />}
+/>
+
+<Route
+  path="/stories/procurement-as-value/nec-designed-for-collaboration"
+  element={<NecDesignedForCollaboration />}
 />
     </Routes>
   );
