@@ -129,11 +129,32 @@ function Home() {
               <h1 className="mt-6 text-4xl font-extrabold tracking-tight leading-none sm:text-5xl sm:whitespace-nowrap">
                 Scars. Lessons. <span className="slt-accent">Triumphs.</span>
               </h1>
+
               <div className="mt-4 h-1 w-20 rounded-full slt-accent-bg"></div>
 
-<p className="mt-5 text-lg text-slate-600 whitespace-nowrap overflow-hidden text-ellipsis">
-  Real leadership lessons from the front line of procurement and performance.
-</p>
+              {/* NEW headline + sub-headline + proof pills */}
+              <div className="mt-5">
+                <p className="text-lg font-semibold text-slate-800 leading-snug">
+                  Real leadership stories from the frontline of procurement and business.
+                </p>
+
+                <p className="mt-2 max-w-xl text-sm text-slate-600 leading-relaxed">
+                  Reflections, scars and hard-won insights for leaders navigating complexity,
+                  pressure and change.
+                </p>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900">
+                    38+ years experience
+                  </span>
+                  <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900">
+                    25+ years procurement leadership
+                  </span>
+                  <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900">
+                    UK & Middle East
+                  </span>
+                </div>
+              </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <button
@@ -143,7 +164,7 @@ function Home() {
                       .getElementById("stories")
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
-                  className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:opacity-95"
+                  className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm shadow-amber-500/30 hover:bg-slate-800 hover:shadow-md hover:shadow-amber-500/40 transition"
                 >
                   Explore stories
                 </button>
@@ -310,9 +331,18 @@ function Home() {
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {[
-              { title: "Leadership Standards", desc: "Respect, accountability, trust, and discipline, made practical." },
-              { title: "High-performing Teams", desc: "What ‘great’ looks like, and how to build it deliberately." },
-              { title: "Procurement Transformation", desc: "From transaction to strategic value, governance, outcomes, culture." },
+              {
+                title: "Leadership Standards",
+                desc: "Respect, accountability, trust, and discipline, made practical.",
+              },
+              {
+                title: "High-performing Teams",
+                desc: "What ‘great’ looks like, and how to build it deliberately.",
+              },
+              {
+                title: "Procurement Transformation",
+                desc: "From transaction to strategic value, governance, outcomes, culture.",
+              },
             ].map((item) => (
               <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6">
                 <div className="text-sm font-semibold">{item.title}</div>
@@ -494,39 +524,39 @@ export default function App() {
       />
 
       <Route
-  path="/stories/procurement-as-value/procurement-built-on-trust"
-  element={<ProcurementBuiltOnTrust />}
-/>
+        path="/stories/procurement-as-value/procurement-built-on-trust"
+        element={<ProcurementBuiltOnTrust />}
+      />
 
-<Route
-  path="/stories/procurement-as-value/nec-vs-fidic"
-  element={<NecVsFidic />}
-/>
+      <Route
+        path="/stories/procurement-as-value/nec-vs-fidic"
+        element={<NecVsFidic />}
+      />
 
-<Route
-  path="/stories/procurement-as-value/strategic-sourcing-pitfalls"
-  element={<StrategicSourcingPitfalls />}
-/>
+      <Route
+        path="/stories/procurement-as-value/strategic-sourcing-pitfalls"
+        element={<StrategicSourcingPitfalls />}
+      />
 
-<Route
-  path="/stories/organisational-performance/work-life-balance-leadership"
-  element={<WorkLifeBalanceLeadership />}
-/>
+      <Route
+        path="/stories/organisational-performance/work-life-balance-leadership"
+        element={<WorkLifeBalanceLeadership />}
+      />
 
-<Route
-  path="/stories/organisational-performance/high-performing-team"
-  element={<HighPerformingTeam />}
-/>
+      <Route
+        path="/stories/organisational-performance/high-performing-team"
+        element={<HighPerformingTeam />}
+      />
 
-<Route
-  path="/stories/procurement-as-value/supplier-reduction-consolidation"
-  element={<SupplierReductionConsolidation />}
-/>
+      <Route
+        path="/stories/procurement-as-value/supplier-reduction-consolidation"
+        element={<SupplierReductionConsolidation />}
+      />
 
-<Route
-  path="/stories/procurement-as-value/nec-designed-for-collaboration"
-  element={<NecDesignedForCollaboration />}
-/>
+      <Route
+        path="/stories/procurement-as-value/nec-designed-for-collaboration"
+        element={<NecDesignedForCollaboration />}
+      />
     </Routes>
   );
 }
