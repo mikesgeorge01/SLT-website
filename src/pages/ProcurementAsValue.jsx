@@ -9,6 +9,7 @@ export default function ProcurementAsValue() {
       {/* Simple Header */}
       <header className="sticky top-0 z-50 w-full border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+          {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img src="/logo.png" alt="SLT logo" className="h-14 w-auto" />
             <div className="hidden sm:block">
@@ -19,6 +20,7 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
+          {/* Header Buttons */}
           <div className="flex items-center gap-3">
             <Link
               to="/"
@@ -42,74 +44,112 @@ export default function ProcurementAsValue() {
       {/* Page Content */}
       <div className="mx-auto max-w-6xl px-4 py-14">
         <h1 className="text-4xl font-extrabold tracking-tight">
-          Procurement as Value
+          Procurement As Value
         </h1>
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
         <p className="mt-6 max-w-3xl text-lg text-slate-600">
-          Procurement isn’t a back-office function. It’s a value engine.
+          Calm, accountability, and standards when it gets uncomfortable.
         </p>
 
+        {/* Cards */}
         <div className="mt-10 grid gap-4 md:grid-cols-2">
-          {[
-            {
-              title: "Make vs Buy: Why Procurement Sits at the Heart of any Decision",
-              to: "/stories/procurement-as-value/make-vs-buy-procurement-heart-of-decision",
-            },
-            {
-              title: "NEC Contracting: Designed for Collaboration",
-              to: "/stories/procurement-as-value/nec-designed-for-collaboration",
-            },
-            {
-              title: "NEC vs FIDIC",
-              to: "/stories/procurement-as-value/nec-vs-fidic",
-            },
-            {
-              title: "Strategic Sourcing Pitfalls",
-              to: "/stories/procurement-as-value/strategic-sourcing-pitfalls",
-            },
-            {
-              title: "Supplier Reduction & Consolidation",
-              to: "/stories/procurement-as-value/supplier-reduction-consolidation",
-            },
-            {
-              title: "Procurement Built on Trust",
-              to: "/stories/procurement-as-value/procurement-built-on-trust",
-            },
+          {/* CLICKABLE CARD */}
+          <Link
+            to="/stories/idiots-guide-procurement"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              My “Idiot’s Guide” to Procurement (No Fluff Edition)
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
 
-            // Coming soon examples (keep / remove as you like)
-            {
-              title: "Should Cost Modelling: How Great Teams Think Differently",
-              to: null,
-            },
-            {
-              title: "Negotiation: Winning Without Damaging Relationships",
-              to: null,
-            },
-          ].map((item) =>
-            item.to ? (
-              <Link
-                key={item.title}
-                to={item.to}
-                className="block rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
-              >
-                <div className="text-sm font-semibold">{item.title}</div>
-                <div className="mt-2 text-xs font-semibold text-amber-600">
-                  Read more →
-                </div>
-              </Link>
-            ) : (
-              <div
-                key={item.title}
-                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-              >
-                <div className="text-sm font-semibold">{item.title}</div>
-                <div className="mt-2 text-xs font-semibold text-slate-400">
-                  Coming soon
-                </div>
+          {/* CLICKABLE CARD */}
+          <Link
+            to="/stories/strategic-vs-operational-procurement"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              Strategic vs Operational Procurement (why both matter)
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          {/* ✅ NEW CLICKABLE CARD */}
+          <Link
+            to="/stories/procurement-as-value/procurement-built-on-trust"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              Procurement is built on trust, and trust is built on ethics.
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+<Link
+  to="/stories/procurement-as-value/nec-vs-fidic"
+  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+>
+  <div className="text-sm font-semibold">
+    NEC vs FIDIC – What’s the real difference?
+  </div>
+  <div className="mt-2 text-xs font-semibold text-amber-600">
+    Read more →
+  </div>
+</Link>
+
+<Link
+  to="/stories/procurement-as-value/strategic-sourcing-pitfalls"
+  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+>
+  <div className="text-sm font-semibold">
+    The Pitfalls to Look Out For in Strategic Sourcing
+  </div>
+  <div className="mt-2 text-xs font-semibold text-amber-600">
+    Read more →
+  </div>
+</Link>
+
+<Link
+  to="/stories/procurement-as-value/supplier-reduction-consolidation"
+  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+>
+  <div className="text-sm font-semibold">Supplier Reduction &amp; Consolidation</div>
+  <div className="mt-2 text-xs font-semibold text-amber-600">Read more →</div>
+</Link>
+
+<Link
+  to="/stories/procurement-as-value/nec-designed-for-collaboration"
+  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+>
+  <div className="text-sm font-semibold">
+    NEC Contracting: Designed for Collaboration
+  </div>
+  <div className="mt-2 text-xs font-semibold text-amber-600">
+    Read more →
+  </div>
+</Link>
+
+          {[
+            "Make vs. Buy, why Procurement sits at the heart of the decision",
+          ].map((x) => (
+            <div
+              key={x}
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <div className="text-sm font-semibold">{x}</div>
+              <div className="mt-3 text-xs font-semibold text-slate-400">
+                Coming soon
               </div>
-            )
-          )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
