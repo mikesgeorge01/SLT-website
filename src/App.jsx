@@ -1,3 +1,4 @@
+import FiveSDisciplineOperationalExcellence from "./pages/FiveSDisciplineOperationalExcellence";
 import React, { useMemo } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -587,6 +588,10 @@ export default function App() {
         path="/stories/procurement-as-value/nec-designed-for-collaboration"
         element={<NecDesignedForCollaboration />}
       />
+      <Route
+  path="/stories/organisational-performance/5s-discipline-operational-excellence"
+  element={<FiveSDisciplineOperationalExcellence />}
+/>
     </Routes>
   );
 }
