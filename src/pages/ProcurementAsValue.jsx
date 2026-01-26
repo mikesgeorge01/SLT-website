@@ -80,7 +80,7 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
-          {/* ✅ NEW CLICKABLE CARD */}
+          {/* CLICKABLE CARD */}
           <Link
             to="/stories/procurement-as-value/procurement-built-on-trust"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
@@ -93,63 +93,66 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
-<Link
-  to="/stories/procurement-as-value/nec-vs-fidic"
-  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
->
-  <div className="text-sm font-semibold">
-    NEC vs FIDIC – What’s the real difference?
-  </div>
-  <div className="mt-2 text-xs font-semibold text-amber-600">
-    Read more →
-  </div>
-</Link>
-
-<Link
-  to="/stories/procurement-as-value/strategic-sourcing-pitfalls"
-  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
->
-  <div className="text-sm font-semibold">
-    The Pitfalls to Look Out For in Strategic Sourcing
-  </div>
-  <div className="mt-2 text-xs font-semibold text-amber-600">
-    Read more →
-  </div>
-</Link>
-
-<Link
-  to="/stories/procurement-as-value/supplier-reduction-consolidation"
-  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
->
-  <div className="text-sm font-semibold">Supplier Reduction &amp; Consolidation</div>
-  <div className="mt-2 text-xs font-semibold text-amber-600">Read more →</div>
-</Link>
-
-<Link
-  to="/stories/procurement-as-value/nec-designed-for-collaboration"
-  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
->
-  <div className="text-sm font-semibold">
-    NEC Contracting: Designed for Collaboration
-  </div>
-  <div className="mt-2 text-xs font-semibold text-amber-600">
-    Read more →
-  </div>
-</Link>
-
-          {[
-            "Make vs. Buy, why Procurement sits at the heart of the decision",
-          ].map((x) => (
-            <div
-              key={x}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-            >
-              <div className="text-sm font-semibold">{x}</div>
-              <div className="mt-3 text-xs font-semibold text-slate-400">
-                Coming soon
-              </div>
+          <Link
+            to="/stories/procurement-as-value/nec-vs-fidic"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              NEC vs FIDIC – What’s the real difference?
             </div>
-          ))}
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          <Link
+            to="/stories/procurement-as-value/strategic-sourcing-pitfalls"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              The Pitfalls to Look Out For in Strategic Sourcing
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          <Link
+            to="/stories/procurement-as-value/supplier-reduction-consolidation"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              Supplier Reduction &amp; Consolidation
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          <Link
+            to="/stories/procurement-as-value/nec-designed-for-collaboration"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              NEC Contracting: Designed for Collaboration
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          {/* ✅ NEW CLICKABLE CARD: MAKE vs BUY */}
+          <Link
+            to="/stories/procurement-as-value/make-vs-buy-procurement-heart-of-decision"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              Make vs Buy: Why Procurement sits at the heart of the decision
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
         </div>
       </div>
     </div>
