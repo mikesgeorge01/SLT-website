@@ -1,3 +1,4 @@
+import TheArtOfBuildingRelationships from "./pages/TheArtOfBuildingRelationships";
 import MakeVsBuyProcurementHeartDecision from "./pages/MakeVsBuyProcurementHeartDecision";
 import FiveSDisciplineOperationalExcellence from "./pages/FiveSDisciplineOperationalExcellence";
 import React, { useMemo } from "react";
@@ -596,6 +597,10 @@ export default function App() {
 <Route
   path="/stories/procurement-as-value/make-vs-buy-procurement-heart-of-decision"
   element={<MakeVsBuyProcurementHeartDecision />}
+/>
+<Route
+  path="/stories/personal-development/the-art-of-building-relationships"
+  element={<TheArtOfBuildingRelationships />}
 />
     </Routes>
   );

@@ -70,6 +70,12 @@ export default function PersonalDevelopment() {
               to: "/stories/discipline-above-everything-else",
             },
 
+            // ✅ NEW ARTICLE
+            {
+              title: "The Art of Building Relationships",
+              to: "/stories/personal-development/the-art-of-building-relationships",
+            },
+
             // Placeholders (coming soon)
             {
               title: "Victim vs Victor Mindset",
