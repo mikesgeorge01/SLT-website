@@ -1,3 +1,4 @@
+import EverySuccessStoryStartsByIgnoringYouCant from "./pages/EverySuccessStoryStartsByIgnoringYouCant";
 import TheArtOfBuildingRelationships from "./pages/TheArtOfBuildingRelationships";
 import MakeVsBuyProcurementHeartDecision from "./pages/MakeVsBuyProcurementHeartDecision";
 import FiveSDisciplineOperationalExcellence from "./pages/FiveSDisciplineOperationalExcellence";
@@ -601,6 +602,10 @@ export default function App() {
 <Route
   path="/stories/personal-development/the-art-of-building-relationships"
   element={<TheArtOfBuildingRelationships />}
+/>
+<Route
+  path="/stories/leadership-that-inspires/every-success-story-starts-by-ignoring-you-cant"
+  element={<EverySuccessStoryStartsByIgnoringYouCant />}
 />
     </Routes>
   );

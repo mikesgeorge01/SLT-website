@@ -112,7 +112,7 @@ export default function LeadershipThatInspires() {
             </div>
           </Link>
 
-          {/* NEW Live article – Interviewing for Talent */}
+          {/* Live article – Interviewing for Talent */}
           <Link
             to="/stories/what-i-look-for-when-interviewing-for-talent"
             className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
@@ -128,15 +128,22 @@ export default function LeadershipThatInspires() {
             </div>
           </Link>
 
-          {/* Coming soon placeholder */}
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          {/* ✅ NEW Live article – Every Success Story Starts by Ignoring “You Can’t” */}
+          <Link
+            to="/stories/leadership-that-inspires/every-success-story-starts-by-ignoring-you-cant"
+            className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+          >
             <div className="text-sm font-semibold">
-              Every success starts by saying you can
+              Every Success Story Starts by Ignoring “You Can’t”
             </div>
-            <div className="mt-3 text-xs font-semibold text-slate-400">
-              Coming soon
+            <p className="mt-2 text-sm text-slate-600">
+              Growth starts where it’s uncomfortable — courage, discipline, and belief
+              in what’s possible.
+            </p>
+            <div className="mt-4 text-xs font-semibold text-amber-600">
+              Read more →
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
