@@ -65,8 +65,8 @@ export default function EverySuccessStoryStartsByIgnoringYouCant() {
         </p>
 
         <p className="mt-6 text-slate-600 leading-relaxed">
-          The truth is, every meaningful achievement I’ve seen — in myself and in
-          others — has come from doing the opposite: taking personal risks,
+          The truth is, every meaningful achievement I’ve seen, in myself and in
+          others, has come from doing the opposite: taking personal risks,
           stepping outside comfort zones, and choosing growth over fear.
         </p>
 
@@ -94,7 +94,7 @@ export default function EverySuccessStoryStartsByIgnoringYouCant() {
 
         <p className="mt-6 text-slate-600 leading-relaxed">
           The right environment and leadership can accelerate this. But even
-          without them, your mindset — your belief in what is possible — remains
+          without them, your mindset, your belief in what is possible — remains
           your greatest strength.
         </p>
 
