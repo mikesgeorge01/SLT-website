@@ -334,8 +334,7 @@ function Home() {
             </p>
 
             <p className="mt-4 text-slate-600">
-              Alternatively you can dive straight into the content in articles
-              and themes.
+              Alternatively you can dive straight into the content in Insights and articles.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
@@ -354,7 +353,7 @@ function Home() {
                 }}
                 className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100 transition"
               >
-                Browse Articles &amp; Themes
+                Browse Insights &amp; Articles
               </button>
             </div>
           </div>
