@@ -35,15 +35,6 @@ export default function TheTrueCostOfMaverickSpend() {
               rel="noreferrer"
               className="rounded-2xl bg-amber-500 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
             >
-                {/* Hero Image */}
-<div className="mt-8">
-  <img
-    src="/maverick-spend.jpg"
-    alt="The true cost of maverick spend and how to reduce it"
-    className="mx-auto w-full max-w-3xl rounded-3xl border border-slate-200 shadow-sm"
-  />
-</div>
-
               LinkedIn
             </a>
           </div>
@@ -61,6 +52,15 @@ export default function TheTrueCostOfMaverickSpend() {
         </p>
 
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
+
+        {/* Hero Image */}
+        <div className="mt-8">
+          <img
+            src="/maverick-spend.jpg"
+            alt="The true cost of maverick spend and how to reduce it"
+            className="mx-auto w-full max-w-3xl rounded-3xl border border-slate-200 shadow-sm"
+          />
+        </div>
 
         <p className="mt-8 text-slate-600 leading-relaxed">
           Maverick spend is often framed as bad behaviour. People bypassing
