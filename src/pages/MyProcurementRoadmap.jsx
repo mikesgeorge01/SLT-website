@@ -51,28 +51,42 @@ export default function MyProcurementRoadmap() {
 
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
+        {/* Hero Image */}
+        <div className="mt-8">
+          <img
+            src="/procurement-roadmap.jpg"
+            alt="My Procurement Roadmap – lessons from the trenches"
+            className="mx-auto w-full max-w-3xl rounded-3xl border border-slate-200 shadow-sm"
+          />
+        </div>
+
         <p className="mt-8 text-slate-600 leading-relaxed">
-          After 25 years in Procurement and Supply Chain, spanning multiple industries and
-          geographies, I’ve been fortunate to work with outstanding people and seize
-          opportunities that shaped both my career and leadership approach.
+          After 25 years in Procurement and Supply Chain, spanning multiple
+          industries and geographies, I’ve been fortunate to work with
+          outstanding people and seize opportunities that shaped both my career
+          and leadership approach.
         </p>
 
         <p className="mt-4 text-slate-600 leading-relaxed">
-          Along the way, I’ve gathered lessons, some strategic, some practical, that
-          continue to guide me today. Here's what I've learned by being in the trenches:
+          Along the way, I’ve gathered lessons, some strategic, some practical,
+          that continue to guide me today. Here's what I've learned by being in
+          the trenches:
         </p>
 
         <p className="mt-6 font-semibold text-slate-900">Strategic lessons:</p>
-        <ul className="mt-4 list-disc pl-6 text-slate-600 space-y-1">
+        <ul className="mt-4 list-disc space-y-1 pl-6 text-slate-600">
           <li>1️⃣ Relationships are as important as contracts.</li>
-          <li>2️⃣ Procurement is a strategic enabler, not just a transactional function.</li>
+          <li>
+            2️⃣ Procurement is a strategic enabler, not just a transactional
+            function.
+          </li>
           <li>3️⃣ Change is constant, adaptability is resilience.</li>
           <li>4️⃣ Data drives decisions, but people deliver outcomes.</li>
           <li>5️⃣ Integrity is non-negotiable.</li>
         </ul>
 
         <p className="mt-6 font-semibold text-slate-900">Practical lessons:</p>
-        <ul className="mt-4 list-disc pl-6 text-slate-600 space-y-1">
+        <ul className="mt-4 list-disc space-y-1 pl-6 text-slate-600">
           <li>1️⃣ Keep it clear, avoid jargon with stakeholders.</li>
           <li>2️⃣ 15% of requirements are unique, 85% are routine.</li>
           <li>3️⃣ Spend data is your foundation.</li>
@@ -86,17 +100,18 @@ export default function MyProcurementRoadmap() {
         </ul>
 
         <p className="mt-6 text-slate-600 leading-relaxed">
-          At its core, procurement is about creating clarity, simplifying complexity, and
-          driving tangible outcomes. Simplicity and accountability always win.
+          At its core, procurement is about creating clarity, simplifying
+          complexity, and driving tangible outcomes. Simplicity and
+          accountability always win.
         </p>
 
-        <p className="mt-6 text-slate-900 font-semibold leading-relaxed">
-          👉 I’d love to hear from you, what are the biggest lessons you’ve learned in your
-          procurement career?
+        <p className="mt-6 font-semibold text-slate-900 leading-relaxed">
+          👉 I’d love to hear from you, what are the biggest lessons you’ve
+          learned in your procurement career?
         </p>
 
         <section className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-6">
-          <p className="text-slate-900 font-semibold">
+          <p className="font-semibold text-slate-900">
             Scars, Lessons and Triumphs (SLT) ⭐️
           </p>
           <p className="mt-2 text-slate-600">
@@ -104,11 +119,11 @@ export default function MyProcurementRoadmap() {
           </p>
 
           <p className="mt-4 text-slate-600">
-            👉🏽Follow me for insights drawn from 25 years in procurement and over 38 years
-            across global industry
+            👉🏽Follow me for insights drawn from 25 years in procurement and
+            over 38 years across global industry
           </p>
 
-          <p className="mt-4 text-slate-900 font-semibold">
+          <p className="mt-4 font-semibold text-slate-900">
             Let’s continue the conversation.
           </p>
 
@@ -136,3 +151,4 @@ export default function MyProcurementRoadmap() {
     </div>
   );
 }
+
