@@ -35,6 +35,15 @@ export default function TheTrueCostOfMaverickSpend() {
               rel="noreferrer"
               className="rounded-2xl bg-amber-500 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
             >
+                {/* Hero Image */}
+<div className="mt-8">
+  <img
+    src="/maverick-spend.jpg"
+    alt="The true cost of maverick spend and how to reduce it"
+    className="mx-auto w-full max-w-3xl rounded-3xl border border-slate-200 shadow-sm"
+  />
+</div>
+
               LinkedIn
             </a>
           </div>
