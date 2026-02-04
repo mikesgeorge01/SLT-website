@@ -1,3 +1,4 @@
+import HowGreatLeadersTalk from "./pages/HowGreatLeadersTalk";
 import React, { useMemo } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import TheTrueCostOfMaverickSpend from "./pages/TheTrueCostOfMaverickSpend";
@@ -631,6 +632,10 @@ export default function App() {
       <Route
   path="/stories/procurement-as-value/the-true-cost-of-maverick-spend"
   element={<TheTrueCostOfMaverickSpend />}
+/>
+<Route
+  path="/stories/leadership-that-inspires/how-great-leaders-talk"
+  element={<HowGreatLeadersTalk />}
 />
     </Routes>
   );

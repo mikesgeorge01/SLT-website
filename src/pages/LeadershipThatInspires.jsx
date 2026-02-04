@@ -144,6 +144,17 @@ export default function LeadershipThatInspires() {
               Read more →
             </div>
           </Link>
+
+          <Link
+  to="/stories/leadership-that-inspires/how-great-leaders-talk"
+  className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+>
+  <div className="text-sm font-semibold">How Great Leaders Talk</div>
+  <p className="mt-2 text-sm text-slate-600">
+    15 real examples of language that builds trust, clarity, and accountability.
+  </p>
+  <div className="mt-4 text-xs font-semibold text-amber-600">Read more →</div>
+</Link>
         </div>
       </div>
     </div>
