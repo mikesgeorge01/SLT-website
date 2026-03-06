@@ -3,10 +3,27 @@ import { Link } from "react-router-dom";
 
 const LINKEDIN_URL = "https://linkedin.com/in/mikegeorge12";
 
+function Bullet({ children }) {
+  return (
+    <li className="flex gap-2 text-slate-600">
+      <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-amber-500" />
+      <span>{children}</span>
+    </li>
+  );
+}
+
+function SectionCard({ title, children }) {
+  return (
+    <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 className="text-lg font-bold tracking-tight">{title}</h2>
+      <div className="mt-4">{children}</div>
+    </section>
+  );
+}
+
 export default function EmployeeSurveys() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
@@ -20,157 +37,208 @@ export default function EmployeeSurveys() {
             </div>
           </Link>
 
-          <a
-            href={LINKEDIN_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm font-medium text-amber-600 hover:text-amber-700"
-          >
-            Follow on LinkedIn
-          </a>
+          <div className="flex items-center gap-3">
+            <Link
+              to="/stories/organisational-performance"
+              className="rounded-2xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
+            >
+              ← Back
+            </Link>
+
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl bg-amber-500 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </header>
 
       {/* Article */}
-      <main className="mx-auto max-w-3xl px-6 py-16">
-
-        <h1 className="text-4xl font-bold tracking-tight mb-6">
+      <main className="mx-auto max-w-3xl px-4 py-14">
+        <h1 className="text-4xl font-extrabold tracking-tight">
           Employee Surveys — Valuable Insight or Just a Token Gesture?
         </h1>
 
-        <p className="text-lg text-slate-700 mb-6">
+        <p className="mt-2 text-sm text-slate-500">
+          6 March 2026 • 4 min read
+        </p>
+
+        <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
+
+        <p className="mt-6 text-lg text-slate-600">
           Most organisations run employee surveys. Engagement surveys. Culture
-          surveys. Pulse checks. Annual questionnaires.
+          surveys. Pulse checks. Annual questionnaires. I’ve completed countless
+          surveys over the years, with mostly positive experiences.
         </p>
 
-        <p className="text-lg text-slate-700 mb-6">
-          I’ve completed countless surveys over the years, and in many cases the
-          experience has been positive.
+        <p className="mt-4 text-lg text-slate-600">
+          But here’s the question worth debating:
         </p>
 
-        <p className="text-lg text-slate-700 mb-10">
-          But here’s the real question for debate:
+        <p className="mt-4 text-lg font-semibold text-slate-800">
+          Are they genuinely useful, or just a corporate tick-box exercise?
         </p>
 
-        <p className="text-xl font-semibold mb-10">
-          Are employee surveys genuinely useful, or just another corporate
-          tick-box exercise?
+        <p className="mt-4 text-lg text-slate-600">
+          I’ve seen first-hand how employee surveys can be incredibly powerful,
+          but only when they are treated as the starting point, not the end
+          product.
         </p>
 
-        <p className="text-lg text-slate-700 mb-6">
-          I’ve seen first-hand how powerful employee surveys can be, but only
-          when they are treated as the beginning of the conversation, not the
-          end product.
+        <p className="mt-4 text-lg text-slate-600">
+          The survey itself has very little value. What you do with the results
+          is where the value lives.
         </p>
 
-        <p className="text-lg text-slate-700 mb-10">
-          The survey itself has very little value.
-          <br />
-          <span className="font-semibold">
-            What you do with the results is where the real value lives.
-          </span>
-        </p>
+        <div className="mt-10 space-y-5">
+          <SectionCard title="1️⃣ When employee surveys are done properly">
+            <p className="text-slate-600">
+              They can become a genuine source of organisational insight.
+            </p>
+            <ul className="mt-4 space-y-2">
+              <Bullet>Bring real issues to the surface</Bullet>
+              <Bullet>Highlight leadership blind spots</Bullet>
+              <Bullet>Reveal cultural issues</Bullet>
+              <Bullet>Identify capability gaps</Bullet>
+              <Bullet>Give employees a voice</Bullet>
+              <Bullet>Strengthen communication strategy</Bullet>
+              <Bullet>Help establish cross-functional teams at all levels</Bullet>
+              <Bullet>Guide targeted improvement actions</Bullet>
+            </ul>
+          </SectionCard>
 
-        {/* Positive list */}
+          <SectionCard title="2️⃣ When surveys are handled badly">
+            <p className="text-slate-600">
+              They quickly become a token gesture — and employees know it.
+            </p>
+            <ul className="mt-4 space-y-2">
+              <Bullet>Survey launched with big fanfare</Bullet>
+              <Bullet>Results disappear into a slide deck</Bullet>
+              <Bullet>No visible actions follow</Bullet>
+              <Bullet>The same issues appear again next year</Bullet>
+              <Bullet>Employee trust drops even further</Bullet>
+            </ul>
+          </SectionCard>
 
-        <h2 className="text-2xl font-semibold mb-6">
-          When handled properly, employee surveys can:
-        </h2>
+          <SectionCard title="3️⃣ Why poor follow-through is worse than no survey at all">
+            <p className="text-slate-600">
+              In some ways, a badly handled survey does more damage than not
+              running one at all.
+            </p>
+            <p className="mt-4 text-slate-600">
+              It sends a very clear message:
+            </p>
+            <p className="mt-4 text-slate-700 font-semibold italic">
+              “We asked, but we weren’t really listening.”
+            </p>
+          </SectionCard>
 
-        <ul className="space-y-3 mb-12 text-lg text-slate-700">
-          <li>✅ Bring real issues to the surface</li>
-          <li>✅ Highlight leadership blind spots</li>
-          <li>✅ Reveal cultural challenges</li>
-          <li>✅ Identify capability gaps</li>
-          <li>✅ Give employees a genuine voice</li>
-          <li>✅ Strengthen organisational communication</li>
-          <li>✅ Enable cross-functional collaboration</li>
-          <li>✅ Guide targeted improvement actions</li>
-        </ul>
+          <SectionCard title="4️⃣ Principles that matter if you’re going to run one">
+            <p className="text-slate-600">
+              If employee surveys are going to create real value, a few things
+              have to happen afterwards.
+            </p>
+            <ul className="mt-4 space-y-2">
+              <Bullet>Share the results openly and honestly</Bullet>
+              <Bullet>Convert findings into specific actions</Bullet>
+              <Bullet>Implement a change cohort</Bullet>
+              <Bullet>Set clear timelines and owners</Bullet>
+              <Bullet>Keep communicating progress</Bullet>
+              <Bullet>Close the feedback loop</Bullet>
+            </ul>
+          </SectionCard>
 
-        <h2 className="text-2xl font-semibold mb-6">
-          But when handled poorly, they quickly become a token gesture.
-        </h2>
+          <SectionCard title="5️⃣ The uncomfortable leadership truth">
+            <p className="text-slate-600">
+              If leadership isn’t prepared to hear difficult feedback, don’t run
+              the survey.
+            </p>
+            <p className="mt-4 text-slate-600">
+              Surveys are not about creating a nice-looking dashboard. They are
+              about listening, responding, and improving.
+            </p>
+          </SectionCard>
 
-        <p className="text-lg text-slate-700 mb-6">
-          Most employees have seen the pattern before:
-        </p>
+          <SectionCard title="6️⃣ My view">
+            <p className="text-slate-600">
+              For me, employee surveys are absolutely worth it — but only when
+              they lead to visible change.
+            </p>
+            <p className="mt-4 text-slate-600">
+              Otherwise, they are just noise.
+            </p>
+            <p className="mt-4 text-slate-700 font-semibold">
+              The survey is not the outcome. Action is the outcome.
+            </p>
+          </SectionCard>
 
-        {/* Negative list */}
+          <section className="rounded-3xl border border-amber-200 bg-amber-50 p-6">
+            <h2 className="text-lg font-bold tracking-tight">My summary</h2>
+            <p className="mt-3 text-slate-700">
+              Employee surveys only create value when employees can see that
+              their voice led to action. Without follow-through, trust erodes
+              and the exercise becomes performative.
+            </p>
 
-        <ul className="space-y-3 mb-12 text-lg text-slate-700">
-          <li>❌ Survey launched with big fanfare</li>
-          <li>❌ Results disappear into a slide deck</li>
-          <li>❌ No visible actions follow</li>
-          <li>❌ The same issues reappear the following year</li>
-          <li>❌ Employee trust drops further</li>
-        </ul>
+            <p className="mt-5 text-slate-700">
+              <span className="font-semibold">
+                Scars, Lessons and Triumphs (SLT) ⭐️
+              </span>
+              <br />
+              A series of reflections from the procurement trenches.
+            </p>
 
-        <p className="text-lg text-slate-700 mb-10">
-          In some ways, that’s worse than not running a survey at all.
-        </p>
+            <p className="mt-4 text-slate-700">
+              👉🏽 Follow me for insights drawn from 25 years in procurement and
+              over 38 years across global industry
+            </p>
 
-        <p className="text-lg text-slate-700 mb-10 italic">
-          Because it sends the message:
-          <br />
-          “We asked, but we weren’t really listening.”
-        </p>
+            <p className="mt-4 text-slate-700 font-semibold">
+              What’s your view and experience?
+            </p>
 
-        {/* Principles */}
+            <div className="mt-6 flex flex-wrap gap-2">
+              {[
+                "Procurement",
+                "SupplyChain",
+                "StrategicSourcing",
+                "ValueCreation",
+                "BusinessPartnering",
+                "Leadership",
+                "Innovation",
+                "Sustainability",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center rounded-full border border-amber-200 bg-white px-3 py-1 text-xs font-semibold text-amber-700"
+                >
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          </section>
 
-        <h2 className="text-2xl font-semibold mb-6">
-          If you’re going to run an employee survey, a few principles matter:
-        </h2>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link
+              to="/"
+              className="rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50"
+            >
+              Back to SLT
+            </Link>
 
-        <ul className="space-y-3 mb-12 text-lg text-slate-700">
-          <li>🔍 Share the results openly and honestly</li>
-          <li>🛠️ Convert findings into specific improvement actions</li>
-          <li>👫 Establish cross-functional change cohorts</li>
-          <li>📅 Set clear timelines and accountable owners</li>
-          <li>🗣️ Communicate progress regularly</li>
-          <li>🔁 Close the feedback loop</li>
-        </ul>
-
-        <p className="text-lg text-slate-700 mb-10">
-          And there’s one more uncomfortable truth.
-        </p>
-
-        <p className="text-xl font-semibold mb-12">
-          If leadership isn’t prepared to hear difficult feedback, don’t run the
-          survey.
-        </p>
-
-        <p className="text-lg text-slate-700 mb-12">
-          For me, employee surveys are worth it — but only when they lead to
-          visible change. Otherwise, they’re just noise.
-        </p>
-
-        <p className="text-lg font-medium mb-16">
-          What’s your experience?
-        </p>
-
-        {/* SLT Signature */}
-
-        <div className="border-t pt-8">
-          <p className="font-semibold text-lg mb-2">
-            Scars, Lessons & Triumphs (SLT) ⭐️
-          </p>
-
-          <p className="text-slate-600 mb-4">
-            A series of reflections from the procurement trenches.
-          </p>
-
-          <p className="text-slate-600">
-            Follow me for insights from 38 years across global industry and 25+
-            years in procurement leadership.
-          </p>
-
-          <a
-            href="https://scarslessonstriumphs.com"
-            className="text-amber-600 font-medium hover:text-amber-700 block mt-4"
-          >
-            View more SLT articles →
-          </a>
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl bg-amber-500 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
+            >
+              Discuss on LinkedIn
+            </a>
+          </div>
         </div>
       </main>
     </div>
