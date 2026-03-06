@@ -1,3 +1,4 @@
+import EmployeeSurveys from "./pages/EmployeeSurveys";
 import WhyOneToOnesMatter from "./pages/WhyOneToOnesMatter";
 import HowGreatLeadersTalk from "./pages/HowGreatLeadersTalk";
 import React, { useMemo } from "react";
@@ -641,6 +642,10 @@ export default function App() {
 <Route
   path="/stories/leadership-that-inspires/why-1-1s-are-the-most-important-meeting-in-my-calendar"
   element={<WhyOneToOnesMatter />}
+/>
+<Route
+  path="/stories/organisational-performance/employee-surveys-valuable-insight-or-token-gesture"
+  element={<EmployeeSurveys />}
 />
     </Routes>
   );

@@ -44,6 +44,7 @@ export default function OrganisationalPerformance() {
         <h1 className="text-4xl font-extrabold tracking-tight">
           Organisational Performance
         </h1>
+
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
         <p className="mt-6 max-w-3xl text-lg text-slate-600">
@@ -61,18 +62,27 @@ export default function OrganisationalPerformance() {
               to: "/stories/powerpoint-warrior-problem",
             },
             {
-              title: "Work Life Balance: A Leadership Responsibility, Not a Luxury",
+              title:
+                "Work Life Balance: A Leadership Responsibility, Not a Luxury",
               to: "/stories/organisational-performance/work-life-balance-leadership",
             },
             {
-              title: "What I believe it takes to build a high-performing team",
+              title:
+                "What I believe it takes to build a high-performing team",
               to: "/stories/organisational-performance/high-performing-team",
             },
 
-            // ✅ NOW LIVE
             {
-              title: "5S: The Discipline Behind Operational Excellence",
+              title:
+                "5S: The Discipline Behind Operational Excellence",
               to: "/stories/organisational-performance/5s-discipline-operational-excellence",
+            },
+
+            /* ✅ NEW ARTICLE ADDED HERE */
+            {
+              title:
+                "Employee Surveys — Valuable Insight or Just a Token Gesture?",
+              to: "/stories/organisational-performance/employee-surveys-valuable-insight-or-token-gesture",
             },
 
             {
@@ -80,7 +90,10 @@ export default function OrganisationalPerformance() {
                 "High Performance Isn’t Just About Output, It’s About Honest Conversations",
               to: null,
             },
-            { title: "Change Management", to: null },
+            {
+              title: "Change Management",
+              to: null,
+            },
           ].map((item) =>
             item.to ? (
               <Link
@@ -89,6 +102,7 @@ export default function OrganisationalPerformance() {
                 className="block rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
               >
                 <div className="text-sm font-semibold">{item.title}</div>
+
                 <div className="mt-2 text-xs font-semibold text-amber-600">
                   Read more →
                 </div>
@@ -99,6 +113,7 @@ export default function OrganisationalPerformance() {
                 className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
               >
                 <div className="text-sm font-semibold">{item.title}</div>
+
                 <div className="mt-2 text-xs font-semibold text-slate-400">
                   Coming soon
                 </div>
