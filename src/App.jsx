@@ -1,3 +1,4 @@
+import BenchmarkYourTenders from "./pages/BenchmarkYourTenders";
 import SoleSourceJustification from "./pages/SoleSourceJustification";
 import EmployeeSurveys from "./pages/EmployeeSurveys";
 import WhyOneToOnesMatter from "./pages/WhyOneToOnesMatter";
@@ -651,6 +652,10 @@ export default function App() {
 <Route
   path="/stories/procurement-as-value/sole-source-justification-procurement"
   element={<SoleSourceJustification />}
+/>
+<Route
+  path="/stories/procurement-as-value/do-you-benchmark-your-tenders"
+  element={<BenchmarkYourTenders />}
 />
     </Routes>
   );
